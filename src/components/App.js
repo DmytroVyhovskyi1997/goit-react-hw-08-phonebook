@@ -5,6 +5,7 @@ import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import { Layout } from './Layout';
 import { LoginForm } from './LoginForm/LoginForm';
+import { RegistredForm } from './RegistredForm/RegistredForm';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='login' element={<LoginForm/>}>
 
           </Route>
+          <Route path='logout'element={<RegistredForm/>}></Route>
         </Route>
       </Routes>
       {/* <h1>Phonebook</h1>
