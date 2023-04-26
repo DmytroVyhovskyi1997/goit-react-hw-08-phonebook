@@ -1,8 +1,8 @@
 import Home from 'pages/Home';
 import { Route, Routes } from 'react-router-dom';
-import { ContactForm } from './ContactForm/ContactForm';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
+// import { ContactForm } from './ContactForm/ContactForm';
+// import { ContactList } from './ContactList/ContactList';
+// import { Filter } from './Filter/Filter';
 import { Layout } from './Layout';
 import { LoginForm } from './LoginForm/LoginForm';
 import { RegistredForm } from './RegistredForm/RegistredForm';
