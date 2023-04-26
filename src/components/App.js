@@ -10,14 +10,7 @@ import { RegistredForm } from './RegistredForm/RegistredForm';
 const App = () => {
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 20,
-        color: '#010101',
-      }}
+
     >
       <Routes>
         <Route path='/' element={<Layout/>}>
@@ -25,7 +18,7 @@ const App = () => {
           <Route path='login' element={<LoginForm/>}>
 
           </Route>
-          <Route path='logout'element={<RegistredForm/>}></Route>
+          <Route path='register'element={<RegistredForm/>}></Route>
         </Route>
       </Routes>
       {/* <h1>Phonebook</h1>

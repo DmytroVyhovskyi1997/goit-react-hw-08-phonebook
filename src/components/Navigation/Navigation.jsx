@@ -11,7 +11,7 @@ export const Navigation = () => {
         <StyledLink to='/login'>Log in</StyledLink>
         </li>
         <li>
-        <StyledLink to='/logout'>Log out</StyledLink>
+        <StyledLink to='/register'>Sing up</StyledLink>
         </li>
         
     </ul>
