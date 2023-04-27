@@ -1,4 +1,4 @@
-import { logIn } from 'auth/authOperation';
+import { logIn } from 'redux/auth/authOperation';
 import { useDispatch } from 'react-redux';
 
 export const LoginForm = () => {

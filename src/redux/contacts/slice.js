@@ -8,7 +8,7 @@ import {
   handleFulfilled,
   handlePushFulfilled,
   handleDeleteFulfilled,
-} from 'redux/initial';
+} from 'redux/contacts/initial';
 
 const initialStateContacts = { items: [], isLoading: false, error: null };
 

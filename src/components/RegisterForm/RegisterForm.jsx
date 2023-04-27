@@ -1,8 +1,8 @@
 
 import { useDispatch } from "react-redux";
-import { register } from "auth/authOperation";
+import { register } from "redux/auth/authOperation";
 
-export const RegistredForm = () => {
+export const RegisterForm = () => {
 
     const dispatch = useDispatch();
     // const [name, setName] = useState('');
