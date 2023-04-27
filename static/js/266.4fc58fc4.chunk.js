@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[266],{266:function(e,n,o){o.r(n),o.d(n,{default:function(){return c}});var r=o(184);function c(){return(0,r.jsx)("div",{children:(0,r.jsxs)("h1",{children:["Phonebook welcome page"," ",(0,r.jsx)("span",{role:"img","aria-label":"Telephone icon",children:"\u260e\ufe0f"})]})})}}}]);
-//# sourceMappingURL=266.4fc58fc4.chunk.js.map
