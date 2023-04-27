@@ -10,11 +10,15 @@ import {
   handleDeleteFulfilled,
 } from 'redux/contacts/initial';
 
-const initialStateContacts = { items: [], isLoading: false, error: null };
+const initialState = { 
+  items: [], 
+  isLoading: false, 
+  error: null,
+ };
 
 export const contactsSlice = createSlice({
   name: 'contacts',
-  initialState: initialStateContacts,
+  initialState,
 
   extraReducers: builder => {
     builder
