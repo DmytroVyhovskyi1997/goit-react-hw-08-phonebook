@@ -6,4 +6,5 @@ display: flex;
   width: 100%;
   justify-content: center;
   margin-top:250px;
+  margin-bottom:250px;
 `

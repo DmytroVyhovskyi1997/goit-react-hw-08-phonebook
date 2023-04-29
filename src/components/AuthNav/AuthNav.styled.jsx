@@ -2,12 +2,17 @@ import styled from "styled-components"
 import {NavLink} from "react-router-dom";
 
 export const StyledLink = styled(NavLink)`
-color: white;
+font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    margin-right:100px;
 &.active{
     color:red;
 } 
  `
 
-export const Ul = styled.ul`
-display:flex;
-`
+
+
+
+
+

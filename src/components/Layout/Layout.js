@@ -1,3 +1,4 @@
+import { Footer } from 'components/Footer/Footer';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import {AppBar} from '../AppBar/AppBar'
@@ -19,7 +20,9 @@ export const Layout = () => {
         <Outlet />
       </Suspense>
       </main>
-      
+      <footer>
+        <Footer/>
+      </footer>
     </Wrapper>
   );
 };
