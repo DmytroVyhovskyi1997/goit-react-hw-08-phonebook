@@ -21,6 +21,6 @@ background: black;
 `
 
 export const Box = styled.div`
-display:flex;
-flex-direction: row;
+padding: 0px 48px;
+    max-width: 100%;
 `

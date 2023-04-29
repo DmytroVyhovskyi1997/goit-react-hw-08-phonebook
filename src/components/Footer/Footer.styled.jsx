@@ -8,8 +8,8 @@ margin:0;
 color:moccasin;
 display:flex;
 justify-content: center;
-padding-top:100px;
-padding-bottom:100px;
+padding:32px 0;
+border-top: 1px solid rgb(236, 236, 236);
 `
 
 export const Span = styled.span`
