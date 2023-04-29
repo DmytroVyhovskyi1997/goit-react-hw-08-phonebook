@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <div>
       <Helmet>
-        <title>Login</title>
+        <title>Log in</title>
       </Helmet>
       <LoginForm />
     </div>

@@ -1,21 +1,23 @@
 import { useAuth } from 'hooks/useAuth';
-import {StyledLink} from './Navigation.styled'
+import {Li, P, Span, StyledLink, Ul} from './Navigation.styled'
 
 export const Navigation = () => {
     const { isLoggedIn } = useAuth();
     return(
     <nav>
-    <ul>
-        <li>
+    <Ul>
+        
+        <Li>
+        <P>Phone<Span>Book</Span></P>
         <StyledLink to='/'>Home</StyledLink>
-        </li>
+        </Li>
         {isLoggedIn && (
-            <li>
-            <StyledLink to='/contacts'>Log in</StyledLink>
-            </li>
+            <Li>
+            <StyledLink to='/contacts'>Contacts</StyledLink>
+            </Li>
         )}
         
-    </ul>
+    </Ul>
 </nav> 
     )
 }
