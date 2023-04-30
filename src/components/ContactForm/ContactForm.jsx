@@ -3,7 +3,8 @@ import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { getContacts } from 'redux/contacts/selectors';
-import css from './ContactForm.module.css';
+import { Button, Form, Input, Label } from './ContactForm.styled';
+
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
@@ -48,10 +49,9 @@ export const ContactForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
-      <label className={css.formLabel}>Name </label>
-      <input
-        className={css.formInput}
+    <Form  onSubmit={handleSubmit}>
+      <Label >Name </Label>
+      <Input
         type="text"
         name="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -61,9 +61,9 @@ export const ContactForm = () => {
         onChange={handleChange}
         value={name}
       />
-      <label className={css.formLabel}>Number </label>
-      <input
-        className={css.formInput}
+      <Label >Number </Label>
+      <Input
+
         type="tel"
         name="number"
         pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -73,9 +73,9 @@ export const ContactForm = () => {
         onChange={handleChange}
         value={number}
       />
-      <button className={css.formButton} type="submit">
+      <Button  type="submit">
         Add contact
-      </button>
-    </form>
+      </Button>
+    </Form>
   );
 };
