@@ -37,6 +37,7 @@ font-size: 20px;
 
 export const P = styled.p`
 padding-right:50px;
+padding-bottom: 5px;
 padding-left:30px;
 font-size:32px;
 margin:0;
