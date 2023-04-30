@@ -9,7 +9,7 @@ margin: 50px auto 50px;
     -webkit-box-align: center;
     align-items: center;
     border-radius: 32px;
-    background-color: rgb(255, 255, 255);
+    background-color: #e9f4f2;
     box-shadow: rgb(0 0 0 / 25%) 0px 0px 20px;
 `
 export const Label = styled.label`
@@ -33,12 +33,12 @@ export const Input = styled.input`
     border-left:none;
     border-right:none;
 margin-top:20px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s
-    background-color: rgb(255, 255, 255);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    background-color: #e9f4f2;
     &:focus{
       outline:none;
         border-color: red;
-        background-color: white;
+        background-color: #e9f4f2;
     }
 `
 

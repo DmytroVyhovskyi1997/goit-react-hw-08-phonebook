@@ -2,7 +2,7 @@
 import { useDispatch } from "react-redux";
 
 import { register } from "redux/auth/authOperation";
-import {Form, Button, Input, Label } from "./RegisterForm.module";
+import {Form, Button, Input, Label, Title } from "./RegisterForm.module";
 
 export const RegisterForm = () => {
 
@@ -22,7 +22,7 @@ export const RegisterForm = () => {
       };
   return (
     <>
-      <p>Registration</p>
+      <Title>Registration</Title>
       <Form autoComplete="off" onSubmit={handleSubmit}>
         <Label>
           Username
