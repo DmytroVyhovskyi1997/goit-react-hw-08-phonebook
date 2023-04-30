@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { getContacts } from 'redux/contacts/selectors';
-import { toast } from 'react-toastify';
+import Notiflix from 'notiflix';
 
 import { Button, Form, Input, Label } from './ContactForm.styled';
 
@@ -40,7 +40,7 @@ export const ContactForm = () => {
     );
 
     if (nameExists) {
-      toast.error(`${name} is already in contacts`);
+      Notiflix.Notify.warning(`${name} is already in contacts`);
     } else {
       dispatch(addContact(contact));
     }
