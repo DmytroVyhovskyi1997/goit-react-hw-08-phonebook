@@ -34,7 +34,6 @@ font-size: 20px;
     align-items:center;
     
 `
-
 export const P = styled.p`
 padding-right:50px;
 padding-bottom: 5px;
