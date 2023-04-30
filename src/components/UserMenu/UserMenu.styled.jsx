@@ -18,8 +18,6 @@ color:aqua;
 export const Button = styled.button`
 padding: 8px 24px ;
 margin-right:70px;
-    align-items: center;
-    gap: 4px;
     color: rgb(24, 24, 24);
     font-size: 16px;
     font-weight: bold;
@@ -27,8 +25,8 @@ margin-right:70px;
     border-radius: 12px;
     box-shadow: rgb(209 229 244) 0px 0px 0px 2px;
     cursor:pointer;
-
-    &:hover{
+    border: none;
+    &:hover,focus{
 color: white;
 background-color: red;
 transition: color .25s cubic-bezier(.4,0,.2,1);

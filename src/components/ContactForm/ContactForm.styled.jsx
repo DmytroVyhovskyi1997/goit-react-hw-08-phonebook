@@ -14,6 +14,7 @@ margin: 50px auto 0;
 `
 export const Label = styled.label`
 margin-bottom: 16px;
+margin-top: 16px;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
