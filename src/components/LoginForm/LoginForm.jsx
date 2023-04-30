@@ -22,9 +22,8 @@ export const LoginForm = () => {
       <Label>
         Email
         <Div>
-        <Input type="email" name="email" placeholder="Enter email" />
+          <Input type="email" name="email" placeholder="Enter email" />
         </Div>
-        
       </Label>
       <Label>
         Password
@@ -33,6 +32,5 @@ export const LoginForm = () => {
 
       <Button>Log in</Button>
     </Form>
-    
   );
 };

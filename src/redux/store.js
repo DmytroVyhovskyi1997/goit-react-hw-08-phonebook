@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import {  getDefaultMiddleware } from '@reduxjs/toolkit';
+import { getDefaultMiddleware } from '@reduxjs/toolkit';
 import { contactsSlice } from './contacts/slice';
 import { filterReducer } from './contacts/filter';
 import { authReducer } from './auth/authSlice';
-
 
 import {
   persistStore,
@@ -16,7 +15,6 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-
 
 const middleware = [
   ...getDefaultMiddleware({

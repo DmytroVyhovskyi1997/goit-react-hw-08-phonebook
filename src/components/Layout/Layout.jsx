@@ -9,17 +9,16 @@ export const Layout = () => {
   return (
     <Wrapper>
       <Header>
-      <Box>
-        <AppBar />
+        <Box>
+          <AppBar />
         </Box>
       </Header>
       <main>
-      <Box>
-        <Suspense fallback={null}>
-          <Outlet />
-        </Suspense>
+        <Box>
+          <Suspense fallback={null}>
+            <Outlet />
+          </Suspense>
         </Box>
-       
       </main>
       <footer>
         <Footer />
