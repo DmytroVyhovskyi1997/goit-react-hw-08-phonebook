@@ -1,13 +1,12 @@
 
 import { useDispatch } from "react-redux";
+
 import { register } from "redux/auth/authOperation";
+import {Form, Button, Input, Label } from "./RegisterForm.module";
 
 export const RegisterForm = () => {
 
     const dispatch = useDispatch();
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -24,21 +23,21 @@ export const RegisterForm = () => {
   return (
     <>
       <p>Registration</p>
-      <form autoComplete="off" onSubmit={handleSubmit}>
-        <label>
+      <Form autoComplete="off" onSubmit={handleSubmit}>
+        <Label>
           Username
-          <input  type="text" name="name" placeholder="Enter user name" />
-        </label>
-        <label>
+          <Input  type="text" name="name" placeholder="Enter user name" />
+        </Label>
+        <Label>
           Email
-          <input type="email" name="email" placeholder="Enter email" />
-        </label>
-        <label>
+          <Input type="email" name="email" placeholder="Enter email" />
+        </Label>
+        <Label>
           Password
-          <input type="password" name="password" placeholder="Enter password" />
-        </label>
-        <button type="submit">Register</button>
-      </form>
+          <Input type="password" name="password" placeholder="Enter password" />
+        </Label>
+        <Button type="submit">Register</Button>
+      </Form>
     </>
   );
 };

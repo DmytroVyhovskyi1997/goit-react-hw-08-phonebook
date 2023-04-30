@@ -4,7 +4,7 @@ export default function Home() {
     return (
       <div >
         <Title>
-          Phonebook welcome page{' '}
+          Phonebook welcome page{' '} 
           <span role="img" aria-label="Telephone icon">
             ☎️
           </span>
