@@ -6,8 +6,20 @@ font-size: 20px;
     font-weight: bold;
     letter-spacing: 0.02em;
     margin-right:100px;
+    padding-bottom: 5px;
+    position:relative;
 &.active{
     color:red;
+    &::after,hover{
+        content: "";
+        position: absolute;
+        width:100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        background-color:red;
+            border-radius: 2px;
+    }
 } 
  `
 
