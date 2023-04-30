@@ -3,6 +3,8 @@ import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { getContacts } from 'redux/contacts/selectors';
+import { toast } from 'react-toastify';
+
 import { Button, Form, Input, Label } from './ContactForm.styled';
 
 export const ContactForm = () => {
@@ -25,8 +27,8 @@ export const ContactForm = () => {
     }
   };
 
-  const handleSubmit = event => {
-    event.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault();
     const contact = {
       id: nanoid(),
       name,
@@ -38,7 +40,7 @@ export const ContactForm = () => {
     );
 
     if (nameExists) {
-      alert(`${name} is already in contacts`);
+      toast.error(`${name} is already in contacts`);
     } else {
       dispatch(addContact(contact));
     }
