@@ -8,7 +8,7 @@ export const Navigation = () => {
 
   useEffect(() => {
     if (isLoggedIn === true) {
-      return Notiflix.Notify.success(`Wellcome back `);
+      return Notiflix.Notify.success(`Wellcome `);
     }
   }, [isLoggedIn]);
 
