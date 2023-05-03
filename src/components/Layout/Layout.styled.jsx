@@ -23,4 +23,8 @@ export const Header = styled.div`
 export const Box = styled.div`
   padding: 0px 48px;
   max-width: 100%;
+  @media  screen and (max-width:768px){
+    padding:0;
+  }
+  
 `;
