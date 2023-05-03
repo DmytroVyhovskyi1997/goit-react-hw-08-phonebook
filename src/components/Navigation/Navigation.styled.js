@@ -24,7 +24,10 @@ export const StyledLink = styled(NavLink)`
 
 export const Ul = styled.ul`
   display: flex;
-  padding-left:5px;
+  @media  screen and (max-width:768px){
+    padding-left:5px;
+  }
+  
 `;
 export const Li = styled.li`
   font-size: 20px;
