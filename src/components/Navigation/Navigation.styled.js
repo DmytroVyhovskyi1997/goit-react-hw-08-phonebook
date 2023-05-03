@@ -33,6 +33,10 @@ export const Li = styled.li`
   align-items: center;
 `;
 export const P = styled.p`
+@media  screen and (max-width:768px){
+  padding-left: 0;
+
+}
   padding-right: 50px;
   padding-bottom: 5px;
   padding-left: 30px;
